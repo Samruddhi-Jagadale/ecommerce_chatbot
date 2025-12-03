@@ -1,0 +1,13 @@
+[2025-11-30 22:23:31,410 ] 36 root - INFO - Initializing NVIDIA Embeddings.
+[2025-11-30 22:23:31,410 ] 42 root - INFO - Embeddings initialized successfully.
+[2025-11-30 22:23:31,410 ] 51 root - INFO - Initializing Groq LLM
+[2025-11-30 22:23:31,602 ] 58 root - INFO - LLM initialized successfully
+[2025-11-30 22:23:31,602 ] 67 root - INFO - Creating prompt template
+[2025-11-30 22:23:31,602 ] 81 root - INFO - Prompt template created
+[2025-11-30 22:23:31,602 ] 90 root - INFO - Loading Pinecone vector store
+[2025-11-30 22:23:31,888 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-11-30 22:23:31,899 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-11-30 22:23:31,924 ] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2025-11-30 22:23:34,110 ] 98 root - ERROR - Error loading vector store: No active indexes found in your Pinecone project, are you sure you're using the right Pinecone API key and Environment? Please double check your Pinecone dashboard.
+[2025-11-30 22:23:34,110 ] 124 root - ERROR - Error building retrieval chain: Error occured in python script [C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\src\utils\chatbot_utils.py] line number [91] error message [No active indexes found in your Pinecone project, are you sure you're using the right Pinecone API key and Environment? Please double check your Pinecone dashboard.]
+[2025-11-30 22:23:34,110 ] 139 root - ERROR - Error initializing chatbot: Error occured in python script [C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\src\utils\chatbot_utils.py] line number [107] error message [Error occured in python script [C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\src\utils\chatbot_utils.py] line number [91] error message [No active indexes found in your Pinecone project, are you sure you're using the right Pinecone API key and Environment? Please double check your Pinecone dashboard.]]

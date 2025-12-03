@@ -1,0 +1,28 @@
+[2025-11-30 22:42:15,022 ] 89 root - INFO - Starting data cleaning process
+[2025-11-30 22:42:15,022 ] 34 root - INFO - Loading data from data
+[2025-11-30 22:42:15,157 ] 41 root - INFO - Data loaded successfully
+[2025-11-30 22:42:15,157 ] 49 root - INFO - Checking for 'na' values
+[2025-11-30 22:42:15,191 ] 74 root - INFO - Replacing 'na' values with mode
+[2025-11-30 22:42:15,194 ] 79 root - INFO - Successfully replaced 'na' values
+[2025-11-30 22:42:15,202 ] 100 root - INFO - Data cleaning process has been completed
+[2025-11-30 22:42:15,202 ] 120 root - INFO - Starting vectorstore pipeline
+[2025-11-30 22:42:15,211 ] 49 root - INFO - Loading data from artifacts/data_cleaned.csv
+[2025-11-30 22:42:15,252 ] 56 root - INFO - Sample data: [Document(metadata={'source': 'artifacts/data_cleaned.csv', 'row': 0}, page_content="Brand Name: C J Enterprise\nProduct Name: Women's Kanjivaram Art Silk Saree Soft Banarasi Style Sari With Blouse Piece For Wedding (Pari122-51)\nRating: 4.0 out of 5 stars\nRating Count: 1,177\nSelling Price: \u20b9499\nMRP: \u20b9999\nOffer: (50% off)"), Document(metadata={'source': 'artifacts/data_cleaned.csv', 'row': 1}, page_content="Brand Name: SGF11\nProduct Name: Women's Kanjivaram Soft Silk Saree With Blouse Piece\nRating: 3.8 out of 5 stars\nRating Count: 1,806\nSelling Price: \u20b9597\nMRP: \u20b95,999\nOffer: (90% off)"), Document(metadata={'source': 'artifacts/data_cleaned.csv', 'row': 2}, page_content="Brand Name: SIRIL\nProduct Name: Women's Lace & Printed Chiffon Saree with Blouse\nRating: 3.8 out of 5 stars\nRating Count: 1,512\nSelling Price: \u20b9498\nMRP: \u20b93,519\nOffer: (86% off)"), Document(metadata={'source': 'artifacts/data_cleaned.csv', 'row': 3}, page_content="Brand Name: SGF11\nProduct Name: Women's Kanjivaram Pure Soft Silk Saree For Women Pure Golden Zari With Blouse Piece\nRating: 4.1 out of 5 stars\nRating Count: 162\nSelling Price: \u20b91,298\nMRP: \u20b98,999\nOffer: (86% off)"), Document(metadata={'source': 'artifacts/data_cleaned.csv', 'row': 4}, page_content="Brand Name: Sidhidata\nProduct Name: Women's Soft Zimmy Choo Fandy Silk Saree With Hand Work Lace Boarder & Comes With Unstitched Blouse Piece (Chhaava)\nRating: 4.5 out of 5 stars\nRating Count: 316\nSelling Price: \u20b9998\nMRP: \u20b92,999\nOffer: (67% off)")]
+[2025-11-30 22:42:15,252 ] 57 root - INFO - Successfully loaded 937 documents.
+[2025-11-30 22:42:15,252 ] 68 root - INFO - Initializing NVIDIA Embeddings.
+[2025-11-30 22:42:15,252 ] 74 root - INFO - Embeddings initialized successfully.
+[2025-11-30 22:42:15,252 ] 87 root - INFO - Connecting to Pinecone and creating index: ecommerce-chatbot-project
+[2025-11-30 22:42:15,253 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-11-30 22:42:15,254 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-11-30 22:42:15,277 ] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2025-11-30 22:42:38,640 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-11-30 22:42:38,641 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-11-30 22:42:49,865 ] 100 root - INFO - Index status before uploading: {'dimension': 4096,
+ 'index_fullness': 0.0,
+ 'namespaces': {},
+ 'total_vector_count': 0}
+[2025-11-30 22:42:49,866 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-11-30 22:42:49,866 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-11-30 22:42:49,868 ] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2025-11-30 22:42:51,389 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-11-30 22:42:51,391 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference

@@ -1,0 +1,22 @@
+[2025-12-01 12:06:10,501 ] 36 root - INFO - Initializing NVIDIA Embeddings.
+[2025-12-01 12:06:10,502 ] 42 root - INFO - Embeddings initialized successfully.
+[2025-12-01 12:06:10,502 ] 51 root - INFO - Initializing Groq LLM
+[2025-12-01 12:06:10,665 ] 58 root - INFO - LLM initialized successfully
+[2025-12-01 12:06:10,665 ] 67 root - INFO - Creating prompt template
+[2025-12-01 12:06:10,665 ] 81 root - INFO - Prompt template created
+[2025-12-01 12:06:10,665 ] 90 root - INFO - Loading Pinecone vector store
+[2025-12-01 12:06:10,729 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-12-01 12:06:10,731 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-12-01 12:06:10,741 ] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2025-12-01 12:06:12,446 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-12-01 12:06:12,447 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-12-01 12:06:12,450 ] 95 root - INFO - Vector store loaded successfully
+[2025-12-01 12:06:12,451 ] 120 root - INFO - Retrieval chain created successfully
+[2025-12-01 12:06:12,462 ] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-12-01 12:06:12,476 ] 97 werkzeug - INFO -  * Debugger PIN: 361-368-482
+[2025-12-01 12:06:19,796 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 12:06:19] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-12-01 12:06:19,821 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 12:06:19] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-12-01 12:06:20,399 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 12:06:20] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2025-12-01 12:06:20,405 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 12:06:20] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2025-12-01 12:06:20,456 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 12:06:20] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=b38VH4GvlrLCqKzqEthn HTTP/1.1" 200 -
+[2025-12-01 12:06:20,465 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 12:06:20] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -

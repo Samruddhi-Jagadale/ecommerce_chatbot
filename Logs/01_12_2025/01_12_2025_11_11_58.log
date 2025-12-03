@@ -1,0 +1,78 @@
+[2025-12-01 11:11:59,088 ] 36 root - INFO - Initializing NVIDIA Embeddings.
+[2025-12-01 11:11:59,088 ] 42 root - INFO - Embeddings initialized successfully.
+[2025-12-01 11:11:59,088 ] 51 root - INFO - Initializing Groq LLM
+[2025-12-01 11:11:59,320 ] 58 root - INFO - LLM initialized successfully
+[2025-12-01 11:11:59,320 ] 67 root - INFO - Creating prompt template
+[2025-12-01 11:11:59,320 ] 81 root - INFO - Prompt template created
+[2025-12-01 11:11:59,320 ] 90 root - INFO - Loading Pinecone vector store
+[2025-12-01 11:11:59,431 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-12-01 11:11:59,431 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-12-01 11:11:59,449 ] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2025-12-01 11:12:02,300 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-12-01 11:12:02,300 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-12-01 11:12:02,301 ] 95 root - INFO - Vector store loaded successfully
+[2025-12-01 11:12:02,302 ] 120 root - INFO - Retrieval chain created successfully
+[2025-12-01 11:12:02,328 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.51.103:8000
+[2025-12-01 11:12:02,328 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2025-12-01 11:19:59,316 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:19:59] "GET / HTTP/1.1" 200 -
+[2025-12-01 11:20:00,374 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/shirt-03.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,380 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/shirt-05.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,397 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/shirt-02.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,399 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/shirt-01.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,417 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/shirt-06.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,419 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/css/hp_style.css HTTP/1.1" 200 -
+[2025-12-01 11:20:00,433 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/shirt-04.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,436 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/saree-02.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,446 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/saree-01.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,447 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/js/chatbot.js HTTP/1.1" 200 -
+[2025-12-01 11:20:00,451 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/saree-04.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,453 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/saree-03.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,467 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/saree-05.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,471 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/saree-06.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,473 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/watch-01.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,483 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/watch-02.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,486 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/watch-03.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,490 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/watch-04.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,494 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/watch-06.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,495 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/watch-05.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,508 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/logo.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,511 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/chatbot-icon-2-.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,520 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/chatbot-icon-1.png HTTP/1.1" 200 -
+[2025-12-01 11:20:00,882 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/right-01.jpg HTTP/1.1" 200 -
+[2025-12-01 11:20:00,886 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/left.jpg HTTP/1.1" 200 -
+[2025-12-01 11:20:00,888 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/right-02.jpg HTTP/1.1" 200 -
+[2025-12-01 11:20:00,888 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:00] "GET /static/images/right-03.jpg HTTP/1.1" 200 -
+[2025-12-01 11:20:01,709 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-12-01 11:20:36,776 ] 29 root - INFO - User Input: tell me the best gym wears for women
+[2025-12-01 11:20:36,777 ] 1744 app - ERROR - Exception on /chat [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\app.py", line 33, in chat
+    response = chatbot.invoke({"input": question},
+AttributeError: 'dict' object has no attribute 'invoke'
+[2025-12-01 11:20:36,789 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:36] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+[2025-12-01 11:20:47,181 ] 29 root - INFO - User Input: formal shirts for men
+[2025-12-01 11:20:47,181 ] 1744 app - ERROR - Exception on /chat [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\app.py", line 33, in chat
+    response = chatbot.invoke({"input": question},
+AttributeError: 'dict' object has no attribute 'invoke'
+[2025-12-01 11:20:47,182 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:20:47] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -

@@ -1,0 +1,19 @@
+[2025-12-01 15:11:57,115 ] 36 root - INFO - Initializing NVIDIA Embeddings.
+[2025-12-01 15:11:57,116 ] 42 root - INFO - Embeddings initialized successfully.
+[2025-12-01 15:11:57,116 ] 51 root - INFO - Initializing Groq LLM
+[2025-12-01 15:11:57,780 ] 58 root - INFO - LLM initialized successfully
+[2025-12-01 15:11:57,780 ] 67 root - INFO - Creating prompt template
+[2025-12-01 15:11:57,781 ] 81 root - INFO - Prompt template created
+[2025-12-01 15:11:57,781 ] 90 root - INFO - Loading Pinecone vector store
+[2025-12-01 15:11:58,104 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-12-01 15:11:58,114 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-12-01 15:11:58,163 ] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2025-12-01 15:12:00,316 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-12-01 15:12:00,317 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-12-01 15:12:00,319 ] 95 root - INFO - Vector store loaded successfully
+[2025-12-01 15:12:00,319 ] 120 root - INFO - Retrieval chain created successfully
+[2025-12-01 15:12:00,335 ] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-12-01 15:12:00,338 ] 97 werkzeug - INFO -  * Debugger PIN: 361-368-482
+[2025-12-01 15:12:02,459 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 15:12:02] "GET / HTTP/1.1" 200 -
+[2025-12-01 15:12:02,792 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 15:12:02] "[36mGET /static/css/hp_style.css HTTP/1.1[0m" 304 -
+[2025-12-01 15:12:02,808 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 15:12:02] "GET /static/images/home1.webp HTTP/1.1" 200 -

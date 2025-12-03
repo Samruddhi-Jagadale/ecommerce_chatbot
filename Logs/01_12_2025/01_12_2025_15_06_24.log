@@ -1,0 +1,20 @@
+[2025-12-01 15:06:24,912 ] 36 root - INFO - Initializing NVIDIA Embeddings.
+[2025-12-01 15:06:24,913 ] 42 root - INFO - Embeddings initialized successfully.
+[2025-12-01 15:06:24,913 ] 51 root - INFO - Initializing Groq LLM
+[2025-12-01 15:06:25,635 ] 58 root - INFO - LLM initialized successfully
+[2025-12-01 15:06:25,635 ] 67 root - INFO - Creating prompt template
+[2025-12-01 15:06:25,635 ] 81 root - INFO - Prompt template created
+[2025-12-01 15:06:25,635 ] 90 root - INFO - Loading Pinecone vector store
+[2025-12-01 15:06:25,940 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-12-01 15:06:25,942 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-12-01 15:06:25,995 ] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2025-12-01 15:06:28,240 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-12-01 15:06:28,241 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-12-01 15:06:28,243 ] 95 root - INFO - Vector store loaded successfully
+[2025-12-01 15:06:28,244 ] 120 root - INFO - Retrieval chain created successfully
+[2025-12-01 15:06:28,314 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.51.103:8000
+[2025-12-01 15:06:28,314 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2025-12-01 15:06:28,317 ] 97 werkzeug - INFO -  * Restarting with stat

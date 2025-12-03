@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hunnit-style Shop</title>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/hp_style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-banner">
+      <div class="container">
+        <span>UPTO 60% OFF SITEWIDE! +10% on orders above 2999</span>
+        <a class="cta" href="#">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="nav container">
+      <div class="logo">Hunnit</div>
+      <nav class="main-nav">
+        <a href="#" class="active">HOME</a>
+        <a href="#">SHOP ALL</a>
+        <a href="#">BESTSELLING</a>
+        <a href="#">NEW ARRIVALS</a>
+        <a href="#">SALE</a>
+      </nav>
+      <div class="icons">
+        <button id="searchBtn" class="icon">🔍</button>
+        <button class="icon">👤</button>
+        <button class="icon">♡</button>
+        <button class="icon">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Activewear Made For Every Body</h1>
+        <p>Premium, comfortable, durable — designed by women, for women.</p>
+        <a href="#" class="primary-btn">Shop Now</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="static/images/home2.webp" alt="Hero Image">
+    </div>
+</section>
+
+
+
+
+  <!-- Latest Products Grid -->
+  <section class="section container">
+    <h2 class="center">Featured Products</h2>
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="card-media">
+          <img src="https://hunnit.com/cdn/shop/products/zen-cheerful-skort-813394_460x.jpg?v=1736493055" alt="Zen Cheerful Skort">
+        </div>
+        <div class="card-body">
+          <h3 class="prod-title">Zen Cheerful Skort</h3>
+          <p class="price">₹1,499</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="card-media">
+          <img src="https://hunnit.com/cdn/shop/products/zen-flare-pants-753460_460x.jpg?v=1736490670" alt="Zen Flare Pants">
+        </div>
+        <div class="card-body">
+          <h3 class="prod-title">Zen Flare Pants</h3>
+          <p class="price">₹1,799</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="card-media">
+          <img src="https://hunnit.com/cdn/shop/files/24_july_HUNNIT_DAY_1-0687_copy_ab9a5988-0269-425a-a3d5-80f27ed897c5_460x.jpg?v=1736496301" alt="Hunnit Day 1 Collection">
+        </div>
+        <div class="card-body">
+          <h3 class="prod-title">Hunnit Day 1 Collection</h3>
+          <p class="price">₹1,299</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="card-media">
+          <img src="https://hunnit.com/cdn/shop/products/zen-polo-neck-2-in-1-crop-top-264494_460x.jpg?v=1736491946" alt="Zen Polo Neck 2-in-1 Crop Top">
+        </div>
+        <div class="card-body">
+          <h3 class="prod-title">Zen Polo Neck 2-in-1 Crop Top</h3>
+          <p class="price">₹1,099</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="card-media">
+          <img src="https://hunnit.com/cdn/shop/files/2025_Sept18_Hunnit_1436_copy_460x.jpg?v=1758704422" alt="Hunnit Collection Top">
+        </div>
+        <div class="card-body">
+          <h3 class="prod-title">Hunnit Collection Top</h3>
+          <p class="price">₹1,299</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="card-media">
+          <img src="https://hunnit.com/cdn/shop/files/2025_Sept18_Hunnit_1638_copy_460x.jpg?v=1758704373" alt="Zen Halo Dress">
+        </div>
+        <div class="card-body">
+          <h3 class="prod-title">Zen Halo Dress</h3>
+          <p class="price">₹2,299</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Chat Widget -->
+  <div id="chatWidget" class="chat-widget closed">
+    <div class="chat-header">Chat with Hunnit</div>
+    <div class="chat-body" id="chatBody"></div>
+    <div class="chat-footer">
+      <input id="chatInput" placeholder="Ask about products, sizes, shipping..." />
+      <button id="chatSend">Send</button>
+    </div>
+  </div>
+  <button id="chatToggle" class="chat-toggle">🤖</button>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">Hunnit • activewear</div>
+      <div class="footer-links">© 2025 — All rights reserved</div>
+    </div>
+  </footer>
+
+ <script>
+// -------------------------
+// Product Data
+// -------------------------
+const products = {
+  "zen cheerful skort": {
+    price: "₹1,499",
+    sizes: "XS, S, M, L, XL",
+    colors: "Mauve Taupe, Black, Olive",
+    fabric: "Breathable, stretchy fabric perfect for workouts and casual wear"
+  },
+  "zen flare pants": {
+    price: "₹1,799",
+    sizes: "XS, S, M, L, XL",
+    colors: "Mauve Taupe, Navy, Black",
+    fabric: "Soft, moisture-wicking material for gym and leisure"
+  },
+  "hunnit day 1 collection": {
+    price: "₹1,299",
+    sizes: "S, M, L",
+    colors: "Pink, White",
+    fabric: "Lightweight cotton blend"
+  },
+  "zen polo neck 2-in-1 crop top": {
+    price: "₹1,099",
+    sizes: "XS, S, M, L",
+    colors: "Mauve Taupe, Black",
+    fabric: "Stretchy, quick-dry activewear fabric"
+  },
+  "hunnit collection top": {
+    price: "₹1,299",
+    sizes: "S, M, L",
+    colors: "White, Pink, Black",
+    fabric: "Soft cotton blend"
+  },
+  "zen halo dress": {
+    price: "₹2,299",
+    sizes: "XS, S, M, L",
+    colors: "Navy, Black",
+    fabric: "Comfortable, breathable fabric"
+  }
+};
+
+// -------------------------
+// General Bot Replies
+// -------------------------
+const botReplies = {
+  "hello": "Hi! How can I help you today?",
+  "gym": "We have versatile activewear suitable for gym and casual wear — check our best sellers like Zen Cheerful Skort and Zen Flare Pants.",
+  "shipping": "Yes! We deliver all across India with fast shipping.",
+  "versatile": "Our activewear can be used for gym, casual meetings, or daily wear — very versatile!",
+  "fabric": "Ask about the fabric of any product to know more about the material.",
+  "trending": "Our trending products right now include Zen Cheerful Skort, Zen Flare Pants, and Zen Halo Dress.",
+  "tops": "You can pair Zen Cheerful Skort with Zen Polo Neck 2-in-1 Crop Top or Hunnit Collection Top."
+};
+
+// -------------------------
+// Preloaded FAQs
+// -------------------------
+const preloadedQuestions = {
+  "best gym wear": "We have premium activewear for women — check our best sellers like Zen Cheerful Skort and Zen Flare Pants.",
+  "wear in meetings": "Our versatile activewear can be styled for casual meetings or office — try pairing Zen Cheerful Skort with Zen Polo Neck 2-in-1 Crop Top.",
+  "trending this month": "Our trending products this month include Zen Cheerful Skort, Zen Flare Pants, and Zen Halo Dress.",
+  "pair with skort": "You can pair Zen Cheerful Skort with Zen Polo Neck 2-in-1 Crop Top or Hunnit Collection Top.",
+  "new arrivals": "Check our new arrivals like Zen Nova Dress, Zen Halo Dress, and Zen Nova Skorts."
+};
+
+// -------------------------
+// DOM Elements
+// -------------------------
+const chatToggle = document.getElementById('chatToggle');
+const chatWidget = document.getElementById('chatWidget');
+const chatSend = document.getElementById('chatSend');
+const chatInput = document.getElementById('chatInput');
+const chatBody = document.getElementById('chatBody');
+
+// -------------------------
+// Toggle Chat Widget
+// -------------------------
+chatToggle.addEventListener('click', () => {
+  chatWidget.classList.toggle('closed');
+});
+
+// -------------------------
+// Send Message Function
+// -------------------------
+chatSend.addEventListener('click', sendMessage);
+chatInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendMessage();
+  }
+});
+
+function sendMessage() {
+  const msg = chatInput.value.trim();
+  if (!msg) return;
+
+  const lowerMsg = msg.toLowerCase();
+
+  // Add user message
+  const userDiv = document.createElement('div');
+  userDiv.className = 'user-msg';
+  userDiv.textContent = msg;
+  chatBody.appendChild(userDiv);
+
+  // Default reply
+  let reply = "Hello! Ask me about products, sizes, colors, shipping, or fabric.";
+
+  // -------------------------
+  // Product-specific queries
+  // -------------------------
+  for (let pName in products) {
+    if (lowerMsg.includes(pName)) {
+      if (lowerMsg.includes("size") || lowerMsg.includes("sizes")) {
+        reply = `${capitalizeWords(pName)} is available in sizes: ${products[pName].sizes}.`;
+      } else if (lowerMsg.includes("price") || lowerMsg.includes("cost")) {
+        reply = `${capitalizeWords(pName)} costs ${products[pName].price}.`;
+      } else if (lowerMsg.includes("color") || lowerMsg.includes("colors")) {
+        reply = `${capitalizeWords(pName)} is available in colors: ${products[pName].colors}.`;
+      } else if (lowerMsg.includes("fabric") || lowerMsg.includes("material")) {
+        reply = `${capitalizeWords(pName)} is made of ${products[pName].fabric}.`;
+      } else {
+        reply = `${capitalizeWords(pName)} costs ${products[pName].price}, available in sizes: ${products[pName].sizes} and colors: ${products[pName].colors}.`;
+      }
+      break;
+    }
+  }
+
+  // -------------------------
+  // Preloaded FAQs
+  // -------------------------
+  for (let key in preloadedQuestions) {
+    if (lowerMsg.includes(key)) {
+      reply = preloadedQuestions[key];
+      break;
+    }
+  }
+
+  // -------------------------
+  // General bot replies
+  // -------------------------
+  for (let key in botReplies) {
+    if (lowerMsg.includes(key)) {
+      reply = botReplies[key];
+      break;
+    }
+  }
+
+  // Add bot message
+  const botDiv = document.createElement('div');
+  botDiv.className = 'bot-msg';
+  botDiv.textContent = reply;
+  chatBody.appendChild(botDiv);
+
+  chatInput.value = '';
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+// -------------------------
+// Helper Function
+// -------------------------
+function capitalizeWords(str) {
+  return str.replace(/\b\w/g, char => char.toUpperCase());
+}
+</script>
+
+
+</body>
+</html>

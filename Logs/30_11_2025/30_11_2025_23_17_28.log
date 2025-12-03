@@ -1,0 +1,48 @@
+[2025-11-30 23:17:29,091 ] 89 root - INFO - Starting data cleaning process
+[2025-11-30 23:17:29,091 ] 34 root - INFO - Loading data from data
+[2025-11-30 23:17:29,097 ] 41 root - INFO - Data loaded successfully
+[2025-11-30 23:17:29,097 ] 49 root - INFO - Checking for 'na' values
+[2025-11-30 23:17:29,107 ] 74 root - INFO - Replacing 'na' values with mode
+[2025-11-30 23:17:29,110 ] 79 root - INFO - Successfully replaced 'na' values
+[2025-11-30 23:17:29,115 ] 100 root - INFO - Data cleaning process has been completed
+[2025-11-30 23:17:29,115 ] 105 root - INFO - Starting vectorstore pipeline
+[2025-11-30 23:17:29,124 ] 44 root - INFO - Loading data from artifacts/data_cleaned.csv
+[2025-11-30 23:17:29,160 ] 51 root - INFO - Sample data: [Document(metadata={'source': 'artifacts/data_cleaned.csv', 'row': 0}, page_content="Brand Name: C J Enterprise\nProduct Name: Women's Kanjivaram Art Silk Saree Soft Banarasi Style Sari With Blouse Piece For Wedding (Pari122-51)\nRating: 4.0 out of 5 stars\nRating Count: 1,177\nSelling Price: \u20b9499\nMRP: \u20b9999\nOffer: (50% off)"), Document(metadata={'source': 'artifacts/data_cleaned.csv', 'row': 1}, page_content="Brand Name: SGF11\nProduct Name: Women's Kanjivaram Soft Silk Saree With Blouse Piece\nRating: 3.8 out of 5 stars\nRating Count: 1,806\nSelling Price: \u20b9597\nMRP: \u20b95,999\nOffer: (90% off)"), Document(metadata={'source': 'artifacts/data_cleaned.csv', 'row': 2}, page_content="Brand Name: SIRIL\nProduct Name: Women's Lace & Printed Chiffon Saree with Blouse\nRating: 3.8 out of 5 stars\nRating Count: 1,512\nSelling Price: \u20b9498\nMRP: \u20b93,519\nOffer: (86% off)"), Document(metadata={'source': 'artifacts/data_cleaned.csv', 'row': 3}, page_content="Brand Name: SGF11\nProduct Name: Women's Kanjivaram Pure Soft Silk Saree For Women Pure Golden Zari With Blouse Piece\nRating: 4.1 out of 5 stars\nRating Count: 162\nSelling Price: \u20b91,298\nMRP: \u20b98,999\nOffer: (86% off)"), Document(metadata={'source': 'artifacts/data_cleaned.csv', 'row': 4}, page_content="Brand Name: Sidhidata\nProduct Name: Women's Soft Zimmy Choo Fandy Silk Saree With Hand Work Lace Boarder & Comes With Unstitched Blouse Piece (Chhaava)\nRating: 4.5 out of 5 stars\nRating Count: 316\nSelling Price: \u20b9998\nMRP: \u20b92,999\nOffer: (67% off)")]
+[2025-11-30 23:17:29,160 ] 52 root - INFO - Successfully loaded 937 documents.
+[2025-11-30 23:17:29,160 ] 60 root - INFO - Initializing NVIDIA Embeddings.
+[2025-11-30 23:17:29,160 ] 66 root - INFO - Embeddings initialized successfully.
+[2025-11-30 23:17:29,160 ] 76 root - INFO - Connecting to existing Pinecone index: ecommerce-chatbot-project
+[2025-11-30 23:17:29,161 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-11-30 23:17:29,161 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-11-30 23:17:29,179 ] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2025-11-30 23:17:30,525 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-11-30 23:17:30,526 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-11-30 23:17:33,639 ] 84 root - INFO - Index stats before uploading: {'dimension': 4096,
+ 'index_fullness': 0.0,
+ 'namespaces': {},
+ 'total_vector_count': 0}
+[2025-11-30 23:17:33,641 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-11-30 23:17:33,642 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-11-30 23:17:33,642 ] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2025-11-30 23:17:35,195 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-11-30 23:17:35,196 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-11-30 23:20:13,064 ] 94 root - INFO - Index stats after uploading: {'dimension': 4096,
+ 'index_fullness': 0.0,
+ 'namespaces': {'': {'vector_count': 937}},
+ 'total_vector_count': 937}
+[2025-11-30 23:20:13,064 ] 95 root - INFO - Successfully uploaded 937 documents to vector store
+[2025-11-30 23:20:13,070 ] 109 root - INFO - Vectorstore pipeline completed successfully
+[2025-11-30 23:20:13,071 ] 131 root - INFO - Starting chatbot building
+[2025-11-30 23:20:13,071 ] 30 root - INFO - Initializing Llama2 model with Groq
+[2025-11-30 23:20:13,452 ] 40 root - INFO - LLM initialized successfully
+[2025-11-30 23:20:13,452 ] 50 root - INFO - Creating prompt template
+[2025-11-30 23:20:13,453 ] 85 root - INFO - Prompt template has been created
+[2025-11-30 23:20:13,453 ] 95 root - INFO - Initializing vector_store as retriever
+[2025-11-30 23:20:13,453 ] 101 root - INFO - Retriever has been initialized
+[2025-11-30 23:20:13,453 ] 111 root - INFO - Creating stuff document chain...
+[2025-11-30 23:20:13,454 ] 117 root - INFO - Creating retrieval chain...
+[2025-11-30 23:20:13,454 ] 121 root - INFO - Chains created successfully
+[2025-11-30 23:20:13,454 ] 137 root - INFO - Chatbot building completed successfully
+[2025-11-30 23:20:15,025 ] 565 langchain_core.vectorstores.base - WARNING - No relevant docs were retrieved using the relevance score threshold 0.7
+[2025-11-30 23:20:17,378 ] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-11-30 23:20:17,394 ] 31 root - INFO - Test Response: {'input': 'What do you do?', 'context': [], 'answer': "I'm a fashion consultant for a high-end e-commerce store. I specialize in helping customers find the perfect clothing and accessories from our collection, which includes men's clothing, women's clothing, and watches for men. I'm here to provide you with personalized recommendations and guidance to ensure you find exactly what you're looking for. How can I assist you today?"}

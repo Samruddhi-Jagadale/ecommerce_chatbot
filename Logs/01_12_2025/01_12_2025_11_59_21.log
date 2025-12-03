@@ -1,0 +1,76 @@
+[2025-12-01 11:59:21,899 ] 36 root - INFO - Initializing NVIDIA Embeddings.
+[2025-12-01 11:59:21,899 ] 42 root - INFO - Embeddings initialized successfully.
+[2025-12-01 11:59:21,899 ] 51 root - INFO - Initializing Groq LLM
+[2025-12-01 11:59:22,061 ] 58 root - INFO - LLM initialized successfully
+[2025-12-01 11:59:22,061 ] 67 root - INFO - Creating prompt template
+[2025-12-01 11:59:22,061 ] 81 root - INFO - Prompt template created
+[2025-12-01 11:59:22,061 ] 90 root - INFO - Loading Pinecone vector store
+[2025-12-01 11:59:22,126 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-12-01 11:59:22,135 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-12-01 11:59:22,147 ] 10 pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+[2025-12-01 11:59:24,380 ] 12 pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\admin\\Downloads\\Ecommerce-Chatbot-Project-main\\Ecommerce-Chatbot-Project-main\\venv\\lib\\site-packages\\pinecone_plugins'])
+[2025-12-01 11:59:24,381 ] 9 pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+[2025-12-01 11:59:24,383 ] 95 root - INFO - Vector store loaded successfully
+[2025-12-01 11:59:24,384 ] 120 root - INFO - Retrieval chain created successfully
+[2025-12-01 11:59:24,401 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.51.103:8000
+[2025-12-01 11:59:24,401 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2025-12-01 11:59:29,926 ] 1744 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\app.py", line 21, in home
+    return render_template('home_page.html')
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\templates\home_page.html", line 69, in top-level template code
+    {% include 'chat_widget.html' %}
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: chat_widget.html
+[2025-12-01 11:59:29,932 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:59:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-12-01 11:59:32,152 ] 1744 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\app.py", line 21, in home
+    return render_template('home_page.html')
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\templates\home_page.html", line 69, in top-level template code
+    {% include 'chat_widget.html' %}
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\admin\Downloads\Ecommerce-Chatbot-Project-main\Ecommerce-Chatbot-Project-main\venv\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: chat_widget.html
+[2025-12-01 11:59:32,154 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 11:59:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-12-01 12:00:32,950 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 12:00:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
