@@ -1,39 +1,28 @@
-# core dependencies 
-# groq==0.16.0
-# pydantic==2.10.6
-# pydantic_core==2.27.2
-# pydantic-settings==2.7.1
+# Core LangChain dependencies compatible with Python 3.11
 langchain==0.3.15
-langchain-core
-# langchain-community==0.3.15
-# # huggingface-hub==0.28.0
+langchain-core==1.1.1
 langchain-nvidia-ai-endpoints==0.3.8
-# Pinecone==5.4.2
-langchain-pinecone==0.2.2
+langchain-pinecone==0.2.13
 langchain-groq==0.2.4
-# langgraph==0.2.70 
 
-
-# other  dependencies
-# selenium==4.28.1  
-# amazoncaptcha==0.5.11
-python-dotenv
+# Other dependencies
+python-dotenv==1.0.1
 pandas==2.2.3
 numpy==1.26.4
 Flask==2.2.4
 
+# Production / deployment
+gunicorn==22.1.0
+vercel-python-serverless==0.7.4
 
-# for production (aws ec2)
-gunicorn     
-flask
-vercel-python-serverless
+# Optional: if you use HTTP requests
+requests==2.32.0
 
+# Uncomment if you need for scraping / browser automation
+# selenium==4.28.1
+# amazoncaptcha==0.5.11
 
-
-# for airflow, since we are using slim airflow image and it does not include the below module in it 
+# Airflow dependencies not needed for Render
 # psycopg2-binary
 # asyncpg
 # apache-airflow-providers-celery>=3.3.0
-
-
-#-e . 
