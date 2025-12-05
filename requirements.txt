@@ -25,6 +25,9 @@ Flask==2.2.4
 
 # for production (aws ec2)
 gunicorn     
+flask
+vercel-python-serverless
+
 
 
 # for airflow, since we are using slim airflow image and it does not include the below module in it 
